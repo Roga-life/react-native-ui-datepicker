@@ -40,6 +40,7 @@ export type CalendarThemeProps = {
   weekDaysContainerStyle?: ViewStyle;
   weekDaysTextStyle?: TextStyle;
   calendarTextStyle?: TextStyle;
+  calendarItemStyle?: ViewStyle;
   selectedTextStyle?: TextStyle;
   selectedItemColor?: string;
   timePickerContainerStyle?: ViewStyle;

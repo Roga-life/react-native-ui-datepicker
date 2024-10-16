@@ -41,6 +41,7 @@ function Day({
   }, [onSelectDate, date]);
 
   const {
+    calendarItemStyle,
     calendarTextStyle,
     dayContainerStyle,
     selectedItemColor,
@@ -68,7 +69,9 @@ function Day({
         borderColor: selectedItemColor || '#0047FF',
         backgroundColor: selectedItemColor || '#0047FF',
       }
-    : null;
+    : disabled
+    ? null
+    : calendarItemStyle;
 
   const textStyle = isSelected
     ? { color: '#fff', ...selectedTextStyle }
