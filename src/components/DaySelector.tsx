@@ -30,6 +30,7 @@ const DaySelector = () => {
     firstDayOfWeek,
     theme,
     height,
+    allowMultipleGrouping,
   } = useCalendarContext();
 
   const { year, month, hour, minute } = getParsedDate(currentDate);
@@ -110,7 +111,7 @@ const DaySelector = () => {
               areDatesOnSameDay(d, tomorrow)
             );
 
-            if (isSelected) {
+            if (isSelected && allowMultipleGrouping) {
               if (tomorrowSelected && yesterdaySelected) {
                 inRange = true;
               }

@@ -81,6 +81,7 @@ const DateTimePicker = (
     onChange,
     initialView = 'day',
     height,
+    allowMultipleGrouping = true,
     ...rest
   } = props;
 
@@ -309,6 +310,7 @@ const DateTimePicker = (
         onSelectYear,
         onChangeMonth,
         onChangeYear,
+        allowMultipleGrouping,
       }}
     >
       <Calendar
