@@ -44,6 +44,7 @@ function Day({
     calendarTextStyle,
     dayContainerStyle,
     selectedItemColor,
+    isTodayBorderEmphasized,
     selectedTextStyle,
     todayContainerStyle,
     todayTextStyle,
@@ -65,7 +66,9 @@ function Day({
 
   const activeItemStyle = isSelected
     ? {
-        borderColor: selectedItemColor || '#0047FF',
+        ...(isTodayBorderEmphasized && isToday
+          ? {}
+          : { borderColor: selectedItemColor || '#0047FF' }),
         backgroundColor: selectedItemColor || '#0047FF',
       }
     : null;

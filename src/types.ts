@@ -41,6 +41,7 @@ export type CalendarThemeProps = {
   weekDaysTextStyle?: TextStyle;
   calendarTextStyle?: TextStyle;
   selectedTextStyle?: TextStyle;
+  isTodayBorderEmphasized?: boolean;
   selectedItemColor?: string;
   timePickerContainerStyle?: ViewStyle;
   timePickerTextStyle?: TextStyle;

@@ -200,6 +200,7 @@ export default function App() {
               onChange={onChange}
               headerButtonColor={theme?.mainColor}
               selectedItemColor={theme?.mainColor}
+              isTodayBorderEmphasized={true} // ability to highlight today's day border even if it's selected
               // eslint-disable-next-line react-native/no-inline-styles
               selectedTextStyle={{
                 fontWeight: 'bold',
@@ -208,6 +209,7 @@ export default function App() {
               // eslint-disable-next-line react-native/no-inline-styles
               todayContainerStyle={{
                 borderWidth: 1,
+                borderColor: '#999',
               }}
             />
             <View style={styles.footer}>
