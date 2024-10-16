@@ -126,8 +126,8 @@ function Day({
         style={[
           style.dayContainer,
           containerStyle,
-          todayItemStyle,
           activeItemStyle,
+          todayItemStyle,
           disabled && style.disabledDay,
         ]}
         testID={date}
