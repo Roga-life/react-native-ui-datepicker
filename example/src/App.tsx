@@ -208,7 +208,6 @@ export default function App() {
               // eslint-disable-next-line react-native/no-inline-styles
               todayContainerStyle={{
                 borderWidth: 1,
-                borderColor: '#999',
               }}
             />
             <View style={styles.footer}>
